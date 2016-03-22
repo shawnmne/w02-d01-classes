@@ -13,7 +13,7 @@ class Movie
 		@genre
 	end
 
-	def genre = (new_genre)
+	def genre=(new_genre)
 		@genre = new_genre
 	end
 
@@ -21,7 +21,7 @@ class Movie
 		@run_time
 	end
 
-	def run_time = (new_run_time)
+	def run_time=(new_run_time)
 		@run_time = new_run_time
 	end
 
@@ -29,7 +29,7 @@ class Movie
 		@rating
 	end
 
-	def rating = (new_rating)
+	def rating=(new_rating)
 		@rating = new_rating
 	end
 
@@ -37,7 +37,7 @@ class Movie
 		@where_to_watch
 	end
 
-	def where_to_watch = (new_where_to_watch)
+	def where_to_watch=(new_where_to_watch)
 		@where_to_watch = new_where_to_watch
 	end
 

@@ -12,7 +12,7 @@ class RoadTransportation
 		@new_number_of_wheels
 	end	
 
-	def number_of_wheels = (new_number_of_wheels)
+	def number_of_wheels=(new_number_of_wheels)
 		@number_of_wheels = new_number_of_wheels
 	end
 	
@@ -20,7 +20,7 @@ class RoadTransportation
 		@propelled_by
 	end	
 
-	def propelled_by = (new_propelled_by)
+	def propelled_by=(new_propelled_by)
 		@propelled_by = new_propelled_by
 	end	
 
@@ -28,7 +28,7 @@ class RoadTransportation
 		@number_of_passengers
 	end	
 
-	def number_of_passengers = (new_number_of_passengers)
+	def number_of_passengers=(new_number_of_passengers)
 		@number_of_passengers = new_number_of_passengers
 	end	
 

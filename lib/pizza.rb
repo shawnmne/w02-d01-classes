@@ -14,7 +14,7 @@ class Pizza
 		@size
 	end
 	
-	def size = (new_size)
+	def size=(new_size)
 	 @size = new_size
 	end 	
 
@@ -22,7 +22,7 @@ class Pizza
 		@number_of_toppings
 	end
 	
-	def number_of_toppings = (new_number_of_toppings)
+	def number_of_toppings=(new_number_of_toppings)
 	  @number_of_toppings = new_number_of_toppings
 	end
 
@@ -30,7 +30,7 @@ class Pizza
 		@kind_of_cheese
 	end
 
-	def kind_of_cheese = (new_kind_of_cheese)
+	def kind_of_cheese=(new_kind_of_cheese)
 		@kind_of_cheese	= new_kind_of_cheese
 	end
 
@@ -38,13 +38,18 @@ class Pizza
 		@kind_of_sauce
 	end
 
-	def kind_of_sauce = (new_kind_of_sauce)
+	def kind_of_sauce=(new_kind_of_sauce)
 		@kind_of_sauce = new_kind_of_sauce
 	end
 
-	def is_vegetarian = (new_is_vegetarian)
-		@is_vegetarian = new_is_vegetarian
+	def is_vegetarian
+		@is_vegetarian
+	end
 
+	def is_vegetarian=(new_is_vegetarian)
+		@is_vegetarian = new_is_vegetarian
+	end
+	
 end
 
 binding.pry		
