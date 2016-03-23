@@ -22,7 +22,7 @@ class MovieTest < Minitest::Test
 		exorcist = Movie.new(genre: "horror", run_time: "2:12",
 			rating: "9 chocolate bunnies", where_to_watch: "at home on blue ray")
 		exorcist.genre = "comedy"
-		assert("comedy", exorcist.genre)
+		assert_equal("comedy", exorcist.genre)
 	end
 
 	#tests getter for run time
@@ -37,7 +37,7 @@ class MovieTest < Minitest::Test
 		exorcist = Movie.new(genre: "horror", run_time: "2:12",
 			rating: "9 chocolate bunnies", where_to_watch: "at home on blue ray")
 		exorcist.run_time = "0:15"
-		assert("0:15", exorcist.run_time)
+		assert_equal("0:15", exorcist.run_time)
 	end
 
 	#tests getter for rating
@@ -52,7 +52,7 @@ class MovieTest < Minitest::Test
 		exorcist = Movie.new(genre: "horror", run_time: "2:12",
 			rating: "9 chocolate bunnies", where_to_watch: "at home on blue ray")
 		exorcist.rating = "99 luft balloons"
-		assert("99 luft balloons", exorcist.rating)
+		assert_equal("99 luft balloons", exorcist.rating)
 	end
 
 	#tests getter for where to watch
@@ -67,7 +67,7 @@ class MovieTest < Minitest::Test
 		exorcist = Movie.new(genre: "horror", run_time: "2:12",
 			rating: "9 chocolate bunnies", where_to_watch: "at home on blue ray")
 		exorcist.where_to_watch = "in the bathroom"
-		assert("in the bathroom", exorcist.where_to_watch)
+		assert_equal("in the bathroom", exorcist.where_to_watch)
 	end
 
 end
