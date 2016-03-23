@@ -7,9 +7,7 @@ class Movie
 
 	attr_writer :genre, :run_time, :rating,
 			:where_to_watch    
-
-#	attr_accessor :genre, :run_time, :rating,
-#			:where_to_watch		
+	
 
 	def initialize(options)
 		@genre = options[:genre]
