@@ -70,4 +70,18 @@ class MovieTest < Minitest::Test
 		assert_equal("in the bathroom", exorcist.where_to_watch)
 	end
 
+#test assigning to a movie
+	def test_assigning_to_a_movie
+		pizza = Pizza.new(size: "22 inch", number_of_toppings: 13, kind_of_sauce: "barbeque",
+			kind_of_cheese: "swiss", is_vegetarian: true)
+		movie = Movie.new(genre: "horror", run_time: "2:12",
+			rating: "9 chocolate bunnies", where_to_watch: "at home on blue ray")
+		
+		movie.pizza = pizza
+
+		assert_equal(movie, pizza.movie)
+
+		assert_equal(pizza, movie.pizza)
+
+	end	
 end

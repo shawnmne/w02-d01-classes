@@ -84,4 +84,6 @@ class PizzaTest < Minitest::Test
 		crazy_pizza.is_vegetarian = false
 		assert_equal(false, crazy_pizza.is_vegetarian)
 	end
+
+
 end

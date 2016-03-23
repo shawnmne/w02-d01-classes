@@ -1,5 +1,7 @@
 require "pry"
 
+require_relative "pizza.rb"
+
 #this is a class that creates a movie object
 #
 #+genre is the genre the movie is in
@@ -24,6 +26,14 @@ class Movie
 		@where_to_watch = options[:where_to_watch]
 	end
 
+	def pizza
+		@pizza
+	end	
+
+	def pizza=(pizza)
+		@pizza = pizza
+		pizza.movie = self
+	end	
 	
 end
 

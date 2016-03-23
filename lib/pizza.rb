@@ -22,7 +22,13 @@ class Pizza
 		@is_vegetarian = options[:is_vegetarian]
 	end
 
-	
+	def movie
+		@movie
+	end
+
+	def movie=(movie)	
+		@movie = movie
+	end
 	
 end
 
