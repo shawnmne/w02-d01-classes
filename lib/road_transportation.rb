@@ -1,5 +1,12 @@
 require "pry"
 
+#this is a class that creates road transportation objects
+#
+#+number_of_wheels is the number of wheels the vehicle has
+#+propelled_by is what the vehicle is propelled by
+#+number_of_passengers is how many passengers the vehicle can carry
+
+
 class RoadTransportation
 
 	attr_accessor :number_of_wheels, :propelled_by, :number_of_passengers
