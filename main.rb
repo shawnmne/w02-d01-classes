@@ -12,7 +12,7 @@ require "pry"
 #
 #returns a movie object
 def add_a_movie
-	puts "\n\n Adding movie\n"
+	puts "\n\nAdding movie\n"
 	print "What movie would you like to add? "
 	title = gets.chomp
 
@@ -56,19 +56,19 @@ def select_a_movie(movies)
 			puts "#{index}: #{movie.title} currently rated #{movie.rating} chocolate bunnies"
 		end
 
-		print "\nWhich movie would you like to change the movie rating? "
+		print "\nWhich movie would you like to change the movie rating for? "
 		choice = gets.chomp.to_i
 		if choice < 0 || choice >= movies.length
 			puts "Invalid choice"
-			print "Which movie would you like to change the rating? "
+			print "Which movie would you like to change the rating for? "
 			gets.chomp.to_i
 		end	
 		movie = movies[choice]
 		puts "\nPlease change the rating for #{movie.title}."
-		print"How many chocolate bunnies would you like to rate it (1 to 10)? "
+		print"How many chocolate bunnies would you like to rate this movie (1 to 10)? "
 		new_rating = gets.chomp.to_i
-		movie.rating = new_rating
-		puts "\nThank you for updating rating for #{movie.title} to #{movie.rating} chocolate bunnies"
+		movie.rating = new_ratingß
+		puts "\nThank you for updating rating #{movie.title} to #{movie.rating} chocolate bunnies"
 							
 	end
 
@@ -76,14 +76,7 @@ def select_a_movie(movies)
 
 end
 
-#def change_rating(movie)
-#	puts "\nPlease change the rating for #{movie.title}."
-#	print"How many chocolate bunnies would you like to rate it (1 to 10)? "
-#	gets.chomp.to_i
-#	puts "\nThank you for updating rating for #{movie.title} to #{movie.rating} chocolate bunnies"
 
-
-#end	
 
 choice = 9
 movies = []
@@ -104,7 +97,7 @@ while choice != 0
 	 	
 	elsif choice == 3
 		select_a_movie(movies)
-#		change_rating(movie)
+
 
 	elsif choice == 0
 		puts "\nGoodbye"

@@ -32,4 +32,4 @@ class Pizza
 	
 end
 
-binding.pry		
+#binding.pry		
